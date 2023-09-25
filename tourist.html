@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist </title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"> <img src="logo.png" alt="logo" 
+            style= "width: 30%;" </a>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="hometown.html">Hometown</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="tourist.html">Tourist</a></li>
+        </ul>
+    </div>
+    <section id="section-one">
+        <div class="wrapper">
+            <h2 class="main-title">Tourist Attraction</h2>
+            <div class="content">
+                <div class="image-container">
+                    <img src="MN.jpg" alt="image1">
+                </div>
+                <div class="text-container">
+                    <h3>Pura Mangkunegaran</h3>
+                    <p>Located in the heart of Solo, Pura Mangkunegaran, or Mangkunegaran
+                      Palace, offers a captivating journey into the city's regal past.
+                      This exquisite palace stands as a testament to Solo's royal legacy
+                      and artistic finesse. Visitors can explore the palace's grandeur,
+                      from its ornate architecture to its opulent interiors. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-two">
+        <div class="wrapper">
+            <div class="content">
+                <div class="text-container">
+                    <h3>Pasar Gede</h3>
+                    <p>Pasar Gede, also known as Pasar Gede Solo or Pasar Gede
+                      Hardjonagoro, is a bustling market that offers a vibrant tapestry
+                      of flavors, culture, and daily life in Solo. Located at the heart
+                      of the city, this historic market is a must-visit destination for
+                      both locals and tourists. </p>
+                </div>
+                <div class="image-container">
+                    <img src="PG.png" alt="image2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-three">
+        <div class="wrapper">
+            <div class="content">
+                <div class="image-container">
+                    <img src="KR.jpeg" alt="image3"> 
+                </div>
+                <div class="text-container">
+                    <h3>Keraton Solo</h3>
+                    <p>Keraton Solo, also known as Surakarta Palace, is a sprawling
+                      complex of elegant Javanese architecture, filled with intricate
+                      carvings, ornate structures, and lush gardens. The palace is not
+                      only a historical site but also a living testament to the
+                      traditions of Javanese royalty.
+                    </p>
+                </div>
+                <div>
+                    <a href="index.html">
+                    <button type"button"><span></span>BACK TO HOMEPAGE</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- script for reveal elements -->
+    <script>
+        //common reveal options to create reveal animations
+        ScrollReveal({
+          reset: true,
+          distance: '60px',
+          duration: 1000,
+          delay: 200
+        });
+  
+        //target elements, and specify options to create reveal animations
+        ScrollReveal().reveal('.main-title, .title', { delay: 100, origin: 'left' });
+        ScrollReveal().reveal('#section-one .image-container', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('#section-one .text-container', { delay: 150, origin: 'top' });
+        ScrollReveal().reveal('#section-two .image-container', { delay: 100, origin: 'top' });
+        ScrollReveal().reveal('#section-two .text-container', { delay: 150, origin: 'right' });
+        ScrollReveal().reveal('#section-three .image-container', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('#section-three .text-container', { delay: 150, origin: 'top' });
+        ScrollReveal().reveal('.icons-container i', { delay: 100, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.icons-container li', { delay: 100, origin: 'left', interval: 200 });
+      </script>
+</body>
+</html>

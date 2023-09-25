@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recommendation</title>
+    <link rel="stylesheet" href="food.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"> <img src="logo.png" alt="logo" 
+        style= "width: 30%;" </a>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="hometown.html">Hometown</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="tourist.html">Tourist</a></li>
+        </ul>
+        </div>
+    <section id="section-one">
+      <div class="wrapper">
+        <h2 class="main-title">Food Recommendation</h2>
+        <div class="content">
+          <div class="image-container">
+            <img src="img (1).jpg" alt="image1" />
+          </div>
+          <div class="text-container">
+            <h3>Selat Solo</h3>
+            <p>
+              Selat Solo stands as an emblematic Javanese offering closely tied
+              to Solo's gastronomic legacy. This substantial dish traditionally
+              incorporates beef, potatoes, carrots, and green beans bathed in a
+              luscious, savory sauce. Frequently adorned with hard-boiled eggs
+              and crisped shallots, Selat Solo harmoniously blends sweet,
+              savory, and gently spicy notes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-two">
+      <div class="wrapper">
+        <div class="content">
+          <div class="text-container">
+            <h3>Nasi Liwet</h3>
+            <p>
+              Nasi Liwet represents a Javanese rice tradition that embodies the
+              straightforward and cordial essence of Solo's culture. The rice is
+              meticulously cooked in coconut milk and infused with pandan
+              leaves, imparting a delightful, slightly sweet fragrance.
+              Typically served with an array of accompaniments such as fried<br />
+              chicken, tempeh, and sambal (spicy chili sauce), Nasi Liwet offers
+              a diverse ensemble of flavors.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img (2).jpg" alt="image2" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-three">
+      <div class="wrapper">
+        <div class="content">
+          <div class="image-container">
+            <img src="img (3).jpg" alt="image3" />
+          </div>
+          <div class="text-container">
+            <h3>Soto Triwindu</h3>
+            <p>
+              Soto Triwindu is a comforting Javanese broth celebrated for its
+              robust, flavorful base. It showcases shredded chicken, rice
+              noodles, and bean sprouts, all enveloped in a fragrant and savory
+              broth. Complemented by lime, celery leaves, and crisped shallots,
+              this cherished dish elevates the dining experience with its
+              nuanced flavors.
+            </p>
+          </div>
+          <div>
+            <a href="tourist.html">
+            <button type"button"><span></span>NEXT</button></a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- script for reveal elements -->
+      <script>
+        //common reveal options to create reveal animations
+        ScrollReveal({
+          reset: true,
+          distance: '60px',
+          duration: 1000,
+          delay: 200
+        });
+  
+        //target elements, and specify options to create reveal animations
+        ScrollReveal().reveal('.main-title, .title', { delay: 100, origin: 'left' });
+        ScrollReveal().reveal('#section-one .image-container', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('#section-one .text-container', { delay: 150, origin: 'top' });
+        ScrollReveal().reveal('#section-two .image-container', { delay: 100, origin: 'top' });
+        ScrollReveal().reveal('#section-two .text-container', { delay: 150, origin: 'right' });
+        ScrollReveal().reveal('#section-three .image-container', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('#section-three .text-container', { delay: 150, origin: 'top' });
+        ScrollReveal().reveal('.icons-container i', { delay: 100, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.icons-container li', { delay: 100, origin: 'left', interval: 200 });
+      </script>
+ </body>
+</html>
